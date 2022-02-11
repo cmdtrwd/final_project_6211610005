@@ -1,0 +1,226 @@
+header {
+	nav {
+		height: 60px;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-flow: row wrap;
+		flex-flow: row wrap;
+		-webkit-box-pack: start;
+		-ms-flex-pack: start;
+		justify-content: flex-start;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		width: 1200px;
+		margin: auto;
+		>h1 {
+			margin: 0 0 0 29px;
+		}
+		ul {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-orient: horizontal;
+			-webkit-box-direction: normal;
+			-ms-flex-flow: row wrap;
+			flex-flow: row wrap;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			justify-content: center;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+		}
+		ul.header-nav-gloval {
+			margin: 0 0 0 62px;
+			li {
+				margin: 0 0 0 20px;
+				&:first-child {
+					margin: 0;
+				}
+			}
+			li.page-blank {
+				opacity: 0.3;
+				pointer-events: none;
+			}
+		}
+		ul.header-nav-sns {
+			margin: 0 0 0 82px;
+			li {
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-box-orient: horizontal;
+				-webkit-box-direction: normal;
+				-ms-flex-flow: row wrap;
+				flex-flow: row wrap;
+				-webkit-box-pack: center;
+				-ms-flex-pack: center;
+				justify-content: center;
+				-webkit-box-align: center;
+				-ms-flex-align: center;
+				align-items: center;
+				margin: 0 9px 0 0;
+				&:nth-child(3) {
+					&::before {
+						content: "";
+						display: inline-block;
+						height: 26px;
+						width: 1px;
+						background-color: #ea1016;
+						margin: 0 9px 0 0;
+					}
+				}
+			}
+		}
+	}
+	.header-nav-menu {
+		display: none;
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		overflow-x: auto;
+		overflow-y: hidden;
+		background-image: url("https://cdn.milgram.jp/media/header/header_sp_bg.jpg");
+		z-index: 9999;
+		.header-nav-menu-bn {
+			position: fixed;
+			left: 0;
+			bottom: 0;
+		}
+		h2 {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-orient: horizontal;
+			-webkit-box-direction: normal;
+			-ms-flex-flow: row wrap;
+			flex-flow: row wrap;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			justify-content: center;
+			margin: 0 0 7.5vw;
+			img {
+				height: 5.5vw;
+				width: auto;
+			}
+		}
+		ul {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-orient: horizontal;
+			-webkit-box-direction: normal;
+			-ms-flex-flow: row wrap;
+			flex-flow: row wrap;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+			li {
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-box-orient: horizontal;
+				-webkit-box-direction: normal;
+				-ms-flex-flow: row wrap;
+				flex-flow: row wrap;
+				-webkit-box-pack: center;
+				-ms-flex-pack: center;
+				justify-content: center;
+				-webkit-box-align: center;
+				-ms-flex-align: center;
+				align-items: center;
+			}
+			li.page-blank {
+				opacity: 0.5;
+				pointer-events: none;
+			}
+		}
+		.header-nav-menu-main {
+			margin: 20vw 0 0;
+			ul {
+				-webkit-box-pack: start;
+				-ms-flex-pack: start;
+				justify-content: flex-start;
+				li {
+					width: 50vw;
+					margin: 0 0 7.5vw;
+					&:last-child {
+						margin: 0;
+					}
+					img {
+						height: 4vw;
+					}
+				}
+			}
+		}
+		.header-nav-menu-share {
+			margin: 15vw 0 0;
+			ul {
+				-webkit-box-pack: center;
+				-ms-flex-pack: center;
+				justify-content: center;
+				li {
+					margin: 0 5vw;
+					img {
+						height: 10vw;
+					}
+				}
+			}
+		}
+		.header-nav-menu-regulation {
+			margin: 15vw 0 0;
+			ul {
+				li {
+					margin: 0 1.75vw;
+					a {
+						color: #141414;
+						font-size: 3.5vw;
+						font-weight: bold;
+					}
+				}
+			}
+		}
+	}
+}
+.header-nav-menu-btn {
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 9998;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+	img {
+		width: 100%;
+		height: auto;
+	}
+}
+.header-nav-menu-btn.menu-open {
+	width: 13vw;
+	margin: 2.5vw;
+}
+.header-nav-menu-btn.menu-close {
+	width: 9vw;
+	margin: 4vw;
+}
+.header-nav-menu-btn.hide {
+	-webkit-transform: translateY(-100%);
+	-ms-transform: translateY(-100%);
+	transform: translateY(-100%);
+}
+@media only screen and (max-width: 1023px) {
+	.only-pc {
+		display: none !important;
+	}
+}
+@media only screen and (min-width: 1024px) {
+	.only-sp {
+		display: none !important;
+	}
+}

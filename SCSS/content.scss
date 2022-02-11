@@ -1,0 +1,134 @@
+.relative {
+	position: relative;
+	height: 37vh;
+	width: 100%;
+}
+.top-news-twitter {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	background: -webkit-linear-gradient(top, #ea1016 0%, #ea1016 50px, #141414 50px, #141414 100%);
+	background: -o-linear-gradient(top, #ea1016 0%, #ea1016 50px, #141414 50px, #141414 100%);
+	background: linear-gradient(180deg, #ea1016 0%, #ea1016 50px, #141414 50px, black 100%);
+	font-size: 1.5em;
+	>div {
+		width: 1200px;
+		padding: 0 22px 0 25px;
+		&:last-child {
+			border-left: 1px solid #141414;
+		}
+		>div {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-orient: horizontal;
+			-webkit-box-direction: normal;
+			-ms-flex-flow: row wrap;
+			flex-flow: row wrap;
+			-webkit-box-pack: justify;
+			-ms-flex-pack: justify;
+			justify-content: space-between;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+			height: 50px;
+			background-color: #ea1016;
+			border-bottom: 1px solid black;
+		}
+		ul {
+			margin: 5px 0 0;
+			li {
+				padding: 14px 0;
+				border-bottom: 1px solid #ea1016;
+				&:last-child {
+					border-bottom: none;
+				}
+				dl {
+					display: -webkit-box;
+					display: -ms-flexbox;
+					display: flex;
+					-webkit-box-orient: horizontal;
+					-webkit-box-direction: normal;
+					-ms-flex-flow: row wrap;
+					flex-flow: row wrap;
+					-webkit-box-pack: justify;
+					-ms-flex-pack: justify;
+					justify-content: space-between;
+					-webkit-box-align: center;
+					-ms-flex-align: center;
+					align-items: center;
+					dt {
+						width: 103px;
+					}
+					dd {
+						width: calc(100% - 103px);
+					}
+				}
+			}
+		}
+	}
+}
+@media only screen and (max-width: 768px) {
+	.relative {
+		height: auto;
+	}
+	.top-news-twitter {
+		background: none;
+		background: black;
+		>div {
+			width: 600px;
+			padding: 0 22px 0 25px;
+			width: 100%;
+			padding: 0;
+			>div {
+				height: auto;
+				padding: 2vw 3vw 2vw 7vw;
+				picture {
+					img {
+						height: 5vw;
+					}
+				}
+				a {
+					img {
+						width: 4vw;
+						height: auto;
+					}
+				}
+			}
+			ul {
+				margin: 0 0 7vw;
+				padding: 0 7vw;
+				li {
+					padding: 3vw 0;
+					&:last-child {
+						border-bottom: 1px solid #ea1016;
+					}
+					dl {
+						font-size: 3vw;
+					}
+				}
+			}
+		}
+	}
+}
+@media only screen and (max-width: 749px) {
+	.top-news-twitter {
+		>div {
+			ul {
+				li {
+					dl {
+						dt {
+							width: 17vw;
+						}
+						dd {
+							width: calc(100% - 17vw);
+							padding: 0 0 0 2vw;
+						}
+					}
+				}
+			}
+		}
+	}
+}

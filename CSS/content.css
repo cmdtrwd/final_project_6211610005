@@ -1,0 +1,170 @@
+.relative {
+    position: relative;
+    height: 53vh;
+    width: 100%;
+}
+
+.top-news-twitter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background: black;
+
+    /*     background: -webkit-linear-gradient(top, #ea1016 0%, #ea1016 50px, #141414 50px, #141414 100%);
+      background: -o-linear-gradient(top, #ea1016 0%, #ea1016 50px, #141414 50px, #141414 100%);
+      background: linear-gradient(180deg, #ea1016 0%, #ea1016 50px, #141414 50px, black 100%); */
+
+    font-size: 1.5em
+}
+
+@media only screen and (max-width: 768px) {
+    .relative {
+        height: auto;
+    }
+
+    .top-news-twitter {
+        background: none;
+    }
+
+    .top-news-twitter {
+        background: black;
+    }
+
+    .top-news-twitter > div {
+        width: 600px;
+        padding: 0 22px 0 25px;
+    }
+}
+
+.top-news-twitter > div {
+    width: 1200px;
+    padding: 0 22px 0 25px;
+}
+
+@media only screen and (max-width: 768px) {
+    .top-news-twitter > div {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+.top-news-twitter > div:last-child {
+    border-left: 1px solid #141414;
+}
+
+.top-news-twitter > div > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 50px;
+    background-color: #ea1016;
+
+    border-bottom: 1px solid black;
+}
+
+@media only screen and (max-width: 768px) {
+    .top-news-twitter > div > div {
+        height: auto;
+        padding: 2vw 3vw 2vw 7vw;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .top-news-twitter > div > div picture img {
+        height: 5vw;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .top-news-twitter > div > div a img {
+        width: 4vw;
+        height: auto;
+    }
+}
+
+.top-news-twitter > div ul {
+    margin: 5px 0 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .top-news-twitter > div ul {
+        margin: 0 0 7vw;
+        padding: 0 7vw;
+    }
+}
+
+.top-news-twitter > div ul li {
+    padding: 14px 0;
+    border-bottom: 1px solid #ea1016;
+}
+
+@media only screen and (max-width: 768px) {
+    .top-news-twitter > div ul li {
+        padding: 3vw 0;
+    }
+}
+
+.top-news-twitter > div ul li:last-child {
+    border-bottom: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .top-news-twitter > div ul li:last-child {
+        border-bottom: 1px solid #ea1016;
+    }
+}
+
+.top-news-twitter > div ul li dl {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .top-news-twitter > div ul li dl {
+        font-size: 3vw;
+    }
+}
+
+.top-news-twitter > div ul li dl dt {
+    width: 103px;
+}
+
+@media only screen and (max-width: 749px) {
+    .top-news-twitter > div ul li dl dt {
+        width: 17vw;
+    }
+}
+
+.top-news-twitter > div ul li dl dd {
+    width: calc(100% - 103px);
+}
+
+@media only screen and (max-width: 749px) {
+    .top-news-twitter > div ul li dl dd {
+        width: calc(100% - 17vw);
+        padding: 0 0 0 2vw;
+    }
+}
